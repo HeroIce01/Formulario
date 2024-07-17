@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Personal y del Vehículo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Información personal</h2>
+            <form id="personalInfoForm">
+                <div class="input-group">
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="correo" placeholder="Ingresa tu correo">
+                </div>
+                <div class="input-group">
+                    <input type="number" id="edad" placeholder="Ingresa tu edad" required>
+                </div>
+                <div class="radio-group">
+                    <label><input type="radio" name="genero" value="M"> M</label>
+                    <label><input type="radio" name="genero" value="F"> F</label>
+                    <label><input type="radio" name="genero" value="NA"> N.A</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="dni" placeholder="Ingresa tu dni" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="telefono" placeholder="Ingresa tu teléfono" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="form-section">
+            <h2>Información del vehículo</h2>
+            <form id="vehicleInfoForm">
+                <div class="radio-group">
+                    <label><input type="radio" name="transmision" value="automatico" required> Automático</label>
+                    <label><input type="radio" name="transmision" value="mecanico" required> Mecánico</label>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="aire"> Aire acondicionado</label>
+                    <label><input type="checkbox" name="features" value="cuero"> Asientos de cuero</label>
+                    <label><input type="checkbox" name="features" value="glp"> GLP</label>
+                </div>
+                <div class="select-group">
+                    <select name="color" required>
+                        <option value="" disabled selected>Selecciona el color</option>
+                        <option value="blanco">Blanco perlado</option>
+                        <option value="negro">Negro</option>
+                        <option value="azul">Azul</option>
+                        <option value="plata">Plata</option>
+                    </select>
+                </div>
+                <div class="select-group">
+                    <select name="departamento" required>
+                        <option value="" disabled selected>Selecciona el departamento</option>
+                        <option value="ancash">Ancash</option>
+                        <option value="lalibertad">La libertad</option>
+                        <option value="lima">Lima</option>
+                        <option value="cusco">Cusco</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
